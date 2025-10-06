@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AloThon Hackathon 2025</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <a href="#hero" class="text-2xl font-bold text-indigo-600">AloThon</a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#about" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#prizes" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
+                    <a href="#timeline" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+                    <a href="#accommodation" class="text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Accommodation</a>
+                    <a href="#register" class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-700 transition-colors">Register Now</a>
+                </div>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-slate-600 hover:text-indigo-600 p-2 rounded-md">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#about" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#prizes" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Prizes</a>
+            <a href="#timeline" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Timeline</a>
+            <a href="#accommodation" class="block text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Accommodation</a>
+            <a href="#register" class="block bg-indigo-600 text-white px-4 py-2 rounded-full text-base font-medium hover:bg-indigo-700 transition-colors">Register Now</a>
+        </div>
+    </div>
+</nav>
+
+<main class="mt-16">
+    <!-- Hero Section -->
+    <section id="hero" class="bg-indigo-600 text-white py-24 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in">AloThon Hackathon 2025</h1>
+            <p class="text-lg md:text-xl font-medium mb-8 max-w-2xl mx-auto animate-fade-in-up">
+                Build the future. Solve real-world problems. Win amazing prizes.
+            </p>
+            <a href="#register" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-slate-100 transition-transform transform hover:scale-105">
+                Register Now!
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">About the Hackathon</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                AloThon Hackathon 2025 is a 24-hour invention marathon where students from across the country will come together to build, code, and innovate. This year's theme is "AI and IOT combination for a Smarter World."
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-100 rounded-2xl shadow-md transform hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-2">Build</h3>
+                    <p class="text-slate-600">Create a web or mobile application, a hardware project, or a creative solution that addresses a core problem.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-2xl shadow-md transform hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-2">Learn</h3>
+                    <p class="text-slate-600">Attend workshops led by industry experts and get mentorship to level up your skills.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-2xl shadow-md transform hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-2">Connect</h3>
+                    <p class="text-slate-600">Network with peers, meet recruiters, and connect with top tech companies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Prizes</h2>
+            <p class="text-lg text-slate-700 mb-12">
+                We have an amazing prize pool for the most innovative and well-executed projects!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 1st Prize -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-indigo-600 transform hover:scale-105 transition-transform">
+                    <div class="flex items-center justify-center text-4xl mb-4 text-indigo-600">🥇</div>
+                    <h3 class="font-bold text-2xl mb-2">First Prize</h3>
+                    <p class="text-slate-600 mb-4">Rs. 2,00,000</p>
+                </div>
+                <!-- 2nd Prize -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
+                    <div class="flex items-center justify-center text-4xl mb-4 text-slate-500">🥈</div>
+                    <h3 class="font-bold text-2xl mb-2">Second Prize</h3>
+                    <p class="text-slate-600 mb-4">Rs. 1,70,000+ Swag Bags</p>
+                </div>
+                <!-- 3rd Prize -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform">
+                    <div class="flex items-center justify-center text-4xl mb-4 text-yellow-600">🥉</div>
+                    <h3 class="font-bold text-2xl mb-2">Third Prize</h3>
+                    <p class="text-slate-600 mb-4">Rs. 75,000 + Goodies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Timeline</h2>
+            <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 absolute h-full border border-slate-300 border-opacity-20 left-1/2" style="left: 50%;"></div>
+                <!-- Event 1 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-600 shadow-xl w-10 h-10 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 transform hover:scale-105 transition-transform">
+                        <h3 class="mb-3 font-bold text-slate-800 text-lg">Registration Open</h3>
+                        <p class="text-sm leading-snug tracking-wide text-slate-600">October 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-600 shadow-xl w-10 h-10 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 transform hover:scale-105 transition-transform">
+                        <h3 class="mb-3 font-bold text-slate-800 text-lg">Workshops & Mentoring</h3>
+                        <p class="text-sm leading-snug tracking-wide text-slate-600">November 10, 2025</p>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-600 shadow-xl w-10 h-10 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 transform hover:scale-105 transition-transform">
+                        <h3 class="mb-3 font-bold text-slate-800 text-lg">Hackathon Day</h3>
+                        <p class="text-sm leading-snug tracking-wide text-slate-600">November 15-16, 2025</p>
+                    </div>
+                </div>
+                 <!-- Event 4 -->
+                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-600 shadow-xl w-10 h-10 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 transform hover:scale-105 transition-transform">
+                        <h3 class="mb-3 font-bold text-slate-800 text-lg">Project Submission</h3>
+                        <p class="text-sm leading-snug tracking-wide text-slate-600">November 16, 2025, 11:00 AM</p>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-600 shadow-xl w-10 h-10 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 transform hover:scale-105 transition-transform">
+                        <h3 class="mb-3 font-bold text-slate-800 text-lg">Judging & Awards</h3>
+                        <p class="text-sm leading-snug tracking-wide text-slate-600">November 16, 2025, 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Accommodation for Outsiders</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                To ensure a comfortable experience for out-of-town participants, we have arranged for the following accommodation options.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- On-Campus Hostel -->
+                <div class="p-6 bg-white rounded-2xl shadow-lg border-2 border-green-500 transform hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-xl text-green-600 mb-2">On-Campus Hostel</h3>
+                    <p class="text-slate-600 mb-4">
+                        We offer free, shared hostel rooms for the duration of the hackathon (Nov 15-16). Rooms will be allocated on a first-come, first-served basis. Please indicate your need for accommodation in the registration form.
+                    </p>
+                    <p class="text-sm text-slate-500">
+                        *Separate facilities for male and female students will be provided.*
+                    </p>
+                </div>
+                <!-- Nearby Hotels -->
+                <div class="p-6 bg-white rounded-2xl shadow-lg border-2 border-slate-300 transform hover:scale-105 transition-transform">
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Nearby Hotels</h3>
+                    <p class="text-slate-600 mb-4">
+                        For those who prefer private accommodation, we have partnered with local hotels to provide special discounted rates. Mention "AloThon" when booking.
+                    </p>
+                    <ul class="text-left text-slate-600 list-disc list-inside">
+                        <li>The Grand Inn (2km away)</li>
+                        <li>Tech Hub Inn (1km away)</li>
+                        <li>Campus View Hotel (3km away)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="register" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Register Now</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                Fill out the form below to register as an individual or to create a new team.
+            </p>
+
+            <!-- Registration Form -->
+            <form id="registration-form" class="bg-slate-100 p-8 rounded-2xl shadow-lg">
+                <div id="form-message" class="hidden mb-4 p-3 rounded-lg text-sm text-center"></div>
+
+                <!-- Personal Info Section -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold text-slate-800">1. Personal Information</h3>
+                    <div>
+                        <input type="text" id="full_name" name="full_name" placeholder="Full Name" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="University Email" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <input type="text" id="university" name="university" placeholder="University/College Name" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <label for="accommodation-required" class="block text-slate-700 text-left mb-2">Do you require on-campus accommodation?</label>
+                        <select id="accommodation-required" name="accommodation_required" class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option value="false">No, I'm a local student</option>
+                            <option value="true">Yes, I'm an out-of-town student</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Team Info Section -->
+                <div class="mt-8 space-y-6">
+                    <h3 class="text-xl font-semibold text-slate-800">2. Team Information</h3>
+                    <div>
+                        <label for="team-status" class="block text-slate-700 text-left mb-2">How are you participating?</label>
+                        <select id="team-status" name="team_status" class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option value="individual">As an individual</option>
+                            <option value="has_team">I have a team</option>
+                        </select>
+                    </div>
+                    <div id="team-name-input" class="hidden">
+                        <input type="text" id="team_name" name="team_name" placeholder="Team Name" class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                </div>
+
+                <!-- Legal/Consent Section -->
+                <div class="mt-8 space-y-4">
+                    <h3 class="text-xl font-semibold text-slate-800">3. Legal & Consent</h3>
+                    <div class="flex items-center text-left">
+                        <input type="checkbox" id="coc-consent" name="coc_consent" required class="mr-2 text-indigo-600 rounded-md">
+                        <label for="coc-consent" class="text-slate-700 text-sm">I agree to the Hackathon <a href="#" class="text-indigo-600 hover:underline">Code of Conduct</a>.</label>
+                    </div>
+                    <div class="flex items-center text-left">
+                        <input type="checkbox" id="photo-consent" name="photo_consent" class="mr-2 text-indigo-600 rounded-md">
+                        <label for="photo-consent" class="text-slate-700 text-sm">I consent to the use of my photos/videos for promotional purposes.</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="mt-8 bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-indigo-700 transition-colors">
+                    Submit Registration
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Project Submission Section -->
+    <section id="submit-project" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Project Submission</h2>
+            <p class="text-lg text-slate-700 mb-8">
+                Teams can submit their final projects here before the deadline.
+            </p>
+
+            <!-- Project Submission Form -->
+            <form id="submission-form" class="bg-white p-8 rounded-2xl shadow-lg">
+                <div id="submission-message" class="hidden mb-4 p-3 rounded-lg text-sm text-center"></div>
+
+                <!-- Project Info Section -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold text-slate-800">1. Project Details</h3>
+                    <div>
+                        <input type="text" id="project_name" name="project_name" placeholder="Project Name" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <textarea id="project_description" name="project_description" rows="4" placeholder="Briefly describe your project and what problem it solves (max 500 words)" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                    </div>
+                    <div>
+                        <label for="technologies_used" class="block text-slate-700 text-left mb-2">Technologies Used (comma separated)</label>
+                        <input type="text" id="technologies_used" name="technologies_used" placeholder="e.g., Python, React, AWS, MongoDB" required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                </div>
+
+                <!-- Submission Assets Section -->
+                <div class="mt-8 space-y-6">
+                    <h3 class="text-xl font-semibold text-slate-800">2. Submission Assets</h3>
+                    <div>
+                        <label for="repo_link" class="block text-slate-700 text-left mb-2">GitHub/Repository Link</label>
+                        <input type="url" id="repo_link" name="repo_link" placeholder="https://github.com/..." required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <label for="demo_video_link" class="block text-slate-700 text-left mb-2">Demo Video Link (e.g., YouTube)</label>
+                        <input type="url" id="demo_video_link" name="demo_video_link" placeholder="https://youtube.com/..." required class="w-full px-4 py-3 rounded-md border-2 border-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                </div>
+
+                <button type="submit" class="mt-8 bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-indigo-700 transition-colors">
+                    Submit Project
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <a href="#" class="text-xl font-bold">AloThon Hackathon 2025</a>
+            </div>
+            <p class="text-sm text-slate-400">&copy; 2025 AloThon. All Rights Reserved.</p>
+        </div>
+    </footer>
+</main>
+
+<script>
+    // JavaScript for navigation and form handling
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Handle form submissions
+    document.addEventListener('DOMContentLoaded', () => {
+        // Registration Form Logic
+        const registrationForm = document.getElementById('registration-form');
+        const regMessage = document.getElementById('form-message');
+        const teamStatusSelect = document.getElementById('team-status');
+        const teamNameInput = document.getElementById('team-name-input');
+
+        // Toggle team name input based on selection
+        teamStatusSelect.addEventListener('change', (e) => {
+            if (e.target.value === 'has_team') {
+                teamNameInput.classList.remove('hidden');
+            } else {
+                teamNameInput.classList.add('hidden');
+            }
+        });
+
+        // Handle registration form submission
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Registration Schema:
+            const registrationData = {
+                personal_info: {
+                    full_name: document.getElementById('full_name').value,
+                    email: document.getElementById('email').value,
+                    phone_number: document.getElementById('phone_number').value,
+                    university: document.getElementById('university').value,
+                },
+                team_info: {
+                    team_status: teamStatusSelect.value,
+                    team_name: document.getElementById('team_name').value || null,
+                },
+                logistics_info: {
+                    requires_accommodation: document.getElementById('accommodation-required').value === 'true',
+                },
+                legal_info: {
+                    coc_consent: document.getElementById('coc-consent').checked,
+                    photo_consent: document.getElementById('photo-consent').checked,
+                },
+                metadata: {
+                    registration_date: new Date().toISOString(),
+                    // In a real app, you would get the IP address from the server
+                    ip_address: '127.0.0.1', 
+                }
+            };
+
+            // Basic client-side validation
+            if (!registrationData.legal_info.coc_consent) {
+                displayMessage(regMessage, 'Please agree to the Code of Conduct.', 'error');
+                return;
+            }
+
+            if (registrationData.team_info.team_status === 'has_team' && !registrationData.team_info.team_name) {
+                displayMessage(regMessage, 'Please enter a team name.', 'error');
+                return;
+            }
+
+            console.log('Registration Data:', registrationData);
+
+            // Here, you would send registrationData to your backend server
+            // For now, we'll just show a success message
+            displayMessage(regMessage, 'Registration successful! See you at the hackathon.', 'success');
+            registrationForm.reset();
+            teamNameInput.classList.add('hidden');
+        });
+
+        // Project Submission Form Logic
+        const submissionForm = document.getElementById('submission-form');
+        const subMessage = document.getElementById('submission-message');
+
+        submissionForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Project Submission Schema:
+            const submissionData = {
+                project_info: {
+                    project_name: document.getElementById('project_name').value,
+                    project_description: document.getElementById('project_description').value,
+                    technologies_used: document.getElementById('technologies_used').value.split(',').map(tech => tech.trim()),
+                    // In a real app, team_id would be managed by the backend
+                    team_id: 'TEAM_ID_PLACEHOLDER',
+                    submission_date: new Date().toISOString(),
+                },
+                submission_assets: {
+                    repo_link: document.getElementById('repo_link').value,
+                    demo_video_link: document.getElementById('demo_video_link').value,
+                },
+                // Judging info would be handled on the backend
+            };
+
+            // Basic client-side validation
+            if (!isValidUrl(submissionData.submission_assets.repo_link)) {
+                displayMessage(subMessage, 'Please enter a valid GitHub/Repository URL.', 'error');
+                return;
+            }
+
+            if (!isValidUrl(submissionData.submission_assets.demo_video_link)) {
+                displayMessage(subMessage, 'Please enter a valid demo video URL.', 'error');
+                return;
+            }
+
+            console.log('Project Submission Data:', submissionData);
+
+            // Here, you would send submissionData to your backend server
+            // For now, we'll just show a success message
+            displayMessage(subMessage, 'Project submitted successfully! Good luck!', 'success');
+            submissionForm.reset();
+        });
+
+        // Helper function to display messages
+        function displayMessage(element, message, type) {
+            element.textContent = message;
+            element.classList.remove('hidden', 'bg-red-200', 'text-red-700', 'bg-green-200', 'text-green-700');
+            if (type === 'success') {
+                element.classList.add('bg-green-200', 'text-green-700');
+            } else {
+                element.classList.add('bg-red-200', 'text-red-700');
+            }
+        }
+
+        // Helper function for URL validation
+        function isValidUrl(string) {
+            try {
+                new URL(string);
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
